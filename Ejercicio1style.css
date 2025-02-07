@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 18dvw;
+    border: 1px solid rgba(92, 90, 90, 0.163);
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    margin: 15px;
+}
+
+.imagen-perfil{
+    border-radius: 50%;
+    width: 6vw;
+}
+
+.card__nombre{
+    font-size: 1.2rem ;
+}
+
+.card__description{
+    font-size: 0.9rem;
+}
+
+
+
+/*TABLETS*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    section{
+        height: 90dvh;
+        flex-direction: column; 
+        align-content: center; 
+    }
+    .card{
+        width: 35dvw;
+        height: 20dvh;
+        padding-bottom: 50px;
+    }
+    .imagen-perfil{
+        width: 15vw;
+    }
+    .card__nombre{
+        font-size: 1.7rem ;
+    }
+    .card__description{
+        font-size: 1.4rem;
+    }
+}
+
+/*MOVILES*/
+@media screen and (max-width: 767px) {
+    section{
+        height: 200dvh;
+        flex-direction: column; 
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .card{
+        width: 70dvw;
+        height: 22dvh;
+        padding-bottom: 50px;
+    }
+    .imagen-perfil{
+        width: 15vw;
+    }
+    .card__nombre{
+        font-size: 1.8rem ;
+    }
+    .card__description{
+        font-size: 1.5rem;
+    }
+}
